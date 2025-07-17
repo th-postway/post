@@ -144,7 +144,7 @@ Response (Success)
 
 # ใบปะหน้า (Label)
 
-## [POST] /api/label/order/shipments
+## [POST] /merchant/label/order/shipments
 
 Method: `POST`
 
@@ -181,9 +181,9 @@ Curl command
 
 ```bash
 curl -X 'POST' \
-  'https://<domain>/api/label/order/shipments' \
+  'https://<domain>/merchant/label/order/shipments' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA' \
+  -H 'Authorization: Bearer ***' \
   -H 'Content-Type: application/json' \
   -d '{
   "tracking_nos": ["PW2507FE08Y8DX"],
@@ -241,7 +241,7 @@ Curl command
 curl -X 'GET' \
   'https://<domain>/merchant/order-shipment/get-by-tracking-no/PW2507FE08Y8DX' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA'
+  -H 'Authorization: Bearer ***'
 ```
 
 Response (Success)
@@ -352,7 +352,7 @@ Curl command
 curl -X 'GET' \
   'https://<domain>/merchant/order-shipment/get-by-ref/TH2101F3FP5K' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA'
+  -H 'Authorization: Bearer ***'
 ```
 
 Response (Success)
@@ -473,9 +473,9 @@ Curl command
 
 ```bash
 curl -X 'POST' \
-  'https://<domain>/api/order-shipment/filter' \
+  'https://<domain>/merchant/order-shipment/filter' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA' \
+  -H 'Authorization: Bearer ***' \
   -H 'Content-Type: application/json' \
   -d '{
   "filter": "",
@@ -689,7 +689,7 @@ Curl command
 curl -X 'POST' \
   'https://<domain>/merchant/order-shipment/create' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA' \
+  -H 'Authorization: Bearer ***' \
   -H 'Content-Type: application/json' \
   -d '[
     {
@@ -885,7 +885,7 @@ Curl command
 curl -X 'POST' \
   'https://<domain>/merchant/order-shipment/calculate-price' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA' \
+  -H 'Authorization: Bearer ***' \
   -H 'Content-Type: application/json' \
   -d '{
   "shipment_name": "Flash",
@@ -992,7 +992,7 @@ Curl command
 curl -X 'POST' \
   'https://<domain>/merchant/order-shipment/cancel' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA' \
+  -H 'Authorization: Bearer ***' \
   -H 'Content-Type: application/json' \
   -d '{
   "tracking_no": "PW25075HDPTOL9"
@@ -1042,7 +1042,7 @@ Curl command
 curl -X 'GET' \
   'https://<domain>/merchant/shipment-provider/all' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA'
+  -H 'Authorization: Bearer ***'
 ```
 
 Response (Success)
@@ -1187,7 +1187,7 @@ Curl command
 curl -X 'POST' \
   'https://<domain>/merchant/thailand/filter' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer F8D44602A2ACCD0E03E17D99A786C5E0E801D6F088BA8199F35DEBEC463538AF2601C816B4D8C85860DC25663FA095BB14EA' \
+  -H 'Authorization: Bearer ***' \
   -H 'Content-Type: application/json' \
   -d '{
   "filter": "",
